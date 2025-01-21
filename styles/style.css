@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-font{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+/* for all section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+}
+
+
+/* navbar related styles */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F7F7;
+    padding: 15px 30px;
+    gap: 10px;
+    padding: 20px 0px 20px 0px;
+    /* margin-right: 139px;
+    margin-left: 141px; */
+}
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+    
+}
+.navbar .logo img {
+    width: 62px;
+    height: 62px;
+    left: 1px;
+    right: 139px;
+    top: 0;
+    bottom: 0;
+
+}
+.navbar .school-name {
+    width: 129px;
+    height: 30px;
+    left: 30px;
+    top: 17px;
+    color: #111111;
+    Font: Quicksand;
+    Font-weight: 700
+    Font-size: 32px;
+    Row-height: 30px;
+    Letter-spacing: 0%;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 186px; /* Distance from contact button */
+    margin-left: 186px; /* Distance from logo */
+}
+.navbar .menu li a{
+    font-weight: 500;
+    font-size: 20px;
+}
+.navbar .menu li {
+    display: inline;
+}
+.navbar .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .menu li:nth-child(1) a {
+    color: Orange;
+}
+.navbar .menu li:nth-child(2) a {
+    color:  #01ACFD;
+}
+.navbar .menu li:nth-child(3) a {
+    color: #05D4DF;
+}
+.navbar .menu li:nth-child(4) a {
+    color: #5D58EF;
+}
+
+.navbar .menu li a:hover {
+    color: #f4a261;
+}
+.navbar .contact-btn {
+    background-color: #f4a261;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.navbar .contact-btn {
+    font: quicksand;
+    width: 157px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+}
+.navbar .contact-btn:hover{
+    background-color: #01ACFD;
+    transition-duration: 0.5s;
+
+}
+
+/* hero related styles */
+
+.hero-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 148px;
+    padding: 0px;
+    margin-left: 141px;
+    margin-right: 139px;
+    width: 0 auto;
+}
+.banner-title{
+    font: Quicksand;
+    Font-weight: 700px;
+    Font-size: 56px;
+    Row-height: 61px;
+    Letter-spacing: 0%;
+    Align: left;
+    margin-bottom: 24px;
+}
+.org-text {
+    color: #FEA301;
+
+}
+.blue-text{
+    color: #01ACFD;
+}
+.banner-description{
+    Font: Quicksand;
+    Font-weight: 400px;
+    Font-size: 20px;
+    Row-height: 25px;
+    Letter-spacing: 0%
+    text-align: left;
+    
+}
+.primary-btn{
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 197px;
+    height: 50px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10;
+    padding: 10px;
+}
+
