@@ -8,7 +8,7 @@
   font-style: normal;
 }
 /* display none option */
-.display-hide
+.hide
 {
     display: none;
 }
@@ -20,9 +20,7 @@
     box-sizing: border-box;
     font-family: "Quicksand", serif;
 }
-body{
-    margin-bottom: 300px;
-}
+
 p{
     color: #808080;
 }
@@ -71,7 +69,9 @@ header,.hero-section, .Stories-section, .curricula-section, .foot{
     font-size: 20px;
     text-decoration: none
 }
-
+.menu_icon{
+    display: none;
+}
 .navbar .menu li:nth-child(1) a {
     color: Orange;
 }
@@ -124,6 +124,9 @@ header,.hero-section, .Stories-section, .curricula-section, .foot{
 }
 .banner-title{
     Font-size: 56px;
+}
+.banner img{
+    width: 100%;
 }
 .org-text {
     color: #FEA301;
@@ -401,4 +404,115 @@ main{
     font-size: 24px;
     font-weight: 700;
 }
+.example1 {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    background-color: #ffe7bc;
+   }
+   .example1 h3 {
+    
+    font-size: 1.5em;
+    color: #111111;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
 
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+
+    -moz-animation: example1 10s linear infinite;
+    -webkit-animation: example1 10s linear infinite;
+    animation: example1 10s linear infinite;
+   }
+  
+   @-moz-keyframes example1 {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes example1 {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes example1 {
+    0%   { 
+    -moz-transform: translateX(100%); 
+    -webkit-transform: translateX(100%); 
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); 
+    -webkit-transform: translateX(-100%);
+    }
+   }
+
+
+
+
+@media only screen and (max-width: 600px) {
+    header,.Stories-section, .foot, .curriculum-section, .hero-section{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar{
+        margin-top: 20px;
+    }
+    .main_menu, .primary-btn, .main-cards{
+        display:none;
+    }
+    .menu_icon{
+        display: block;
+        margin-left: 100px;
+
+
+    }
+    .menu_icon i{
+        font-size: 30px;
+    }
+    .hero-section{
+  
+        flex-direction: column-reverse;
+    }
+    .banner-title{
+        font-size: 32px;
+        text-align: center;
+    }
+    .banner-conentainer p{
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .bannar_button{
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .curriculum-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .arrow-section{
+        display: none;
+    }
+    .date{
+        font-size: 10px;
+    }
+    .single-card h2{
+        font-size: 10px;
+    }
+    .foot{
+        flex-direction: column;
+    }
+    .date{
+
+        top: 47%;
+        left: 12%;
+      
+    }
+    .single-card img{
+        width: 100%;
+    }
+  }
